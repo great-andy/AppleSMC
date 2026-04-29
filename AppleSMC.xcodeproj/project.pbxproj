@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A180CC282F9CC9FF0030176C /* AppleSMC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A180CC272F9CC9FD0030176C /* AppleSMC.cpp */; };
+		A1A7F0BD2F99011D0025C49F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1A7F0B92F99011D0025C49F /* main.cpp */; };
+		A1A7F0BE2F99011D0025C49F /* SMCManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1A7F0BB2F99011D0025C49F /* SMCManager.cpp */; };
+		A1A7F0C32F9901E10025C49F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A7F0C22F9901E10025C49F /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A1A7F09B2F9900720025C49F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A180CC262F9CC9F30030176C /* AppleSMC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleSMC.h; sourceTree = "<group>"; };
+		A180CC272F9CC9FD0030176C /* AppleSMC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleSMC.cpp; sourceTree = "<group>"; };
+		A1997FA12FA1D51E0042D924 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A1A7F09D2F9900720025C49F /* AppleSMC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AppleSMC; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1A7F0B92F99011D0025C49F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A1A7F0BA2F99011D0025C49F /* SMCManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMCManager.h; sourceTree = "<group>"; };
+		A1A7F0BB2F99011D0025C49F /* SMCManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SMCManager.cpp; sourceTree = "<group>"; };
+		A1A7F0BF2F9901300025C49F /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A1A7F0C02F9901540025C49F /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A1A7F0C22F9901E10025C49F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1A7F09A2F9900720025C49F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A7F0C32F9901E10025C49F /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1A7F0942F9900720025C49F = {
+			isa = PBXGroup;
+			children = (
+				A1A7F0C02F9901540025C49F /* .gitignore */,
+				A1A7F0BF2F9901300025C49F /* Makefile */,
+				A1997FA12FA1D51E0042D924 /* README.md */,
+				A1A7F0BC2F99011D0025C49F /* src */,
+				A1A7F0C12F9901E10025C49F /* Frameworks */,
+				A1A7F09E2F9900720025C49F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1A7F09E2F9900720025C49F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7F09D2F9900720025C49F /* AppleSMC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1A7F0BC2F99011D0025C49F /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7F0B92F99011D0025C49F /* main.cpp */,
+				A180CC272F9CC9FD0030176C /* AppleSMC.cpp */,
+				A180CC262F9CC9F30030176C /* AppleSMC.h */,
+				A1A7F0BB2F99011D0025C49F /* SMCManager.cpp */,
+				A1A7F0BA2F99011D0025C49F /* SMCManager.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A1A7F0C12F9901E10025C49F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1A7F0C22F9901E10025C49F /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1A7F09C2F9900720025C49F /* AppleSMC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1A7F0A42F9900720025C49F /* Build configuration list for PBXNativeTarget "AppleSMC" */;
+			buildPhases = (
+				A1A7F0992F9900720025C49F /* Sources */,
+				A1A7F09A2F9900720025C49F /* Frameworks */,
+				A1A7F09B2F9900720025C49F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppleSMC;
+			packageProductDependencies = (
+			);
+			productName = AppleSMC;
+			productReference = A1A7F09D2F9900720025C49F /* AppleSMC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1A7F0952F9900720025C49F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					A1A7F09C2F9900720025C49F = {
+						CreatedOnToolsVersion = 26.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A1A7F0982F9900720025C49F /* Build configuration list for PBXProject "AppleSMC" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1A7F0942F9900720025C49F;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A1A7F09E2F9900720025C49F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1A7F09C2F9900720025C49F /* AppleSMC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1A7F0992F9900720025C49F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1A7F0BD2F99011D0025C49F /* main.cpp in Sources */,
+				A1A7F0BE2F99011D0025C49F /* SMCManager.cpp in Sources */,
+				A180CC282F9CC9FF0030176C /* AppleSMC.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1A7F0A22F9900720025C49F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A1A7F0A32F9900720025C49F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A1A7F0A52F9900720025C49F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CLANG_CXX_STANDARD_LIBRARY_HARDENING[arch=*]" = "$(__LIBRARY_HARDENING_DEFAULT_VALUE)";
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1A7F0A62F9900720025C49F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1A7F0982F9900720025C49F /* Build configuration list for PBXProject "AppleSMC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A7F0A22F9900720025C49F /* Debug */,
+				A1A7F0A32F9900720025C49F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1A7F0A42F9900720025C49F /* Build configuration list for PBXNativeTarget "AppleSMC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1A7F0A52F9900720025C49F /* Debug */,
+				A1A7F0A62F9900720025C49F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1A7F0952F9900720025C49F /* Project object */;
+}
