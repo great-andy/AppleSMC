@@ -90,7 +90,7 @@ Writing values to the SMC via `--write` can be dangerous. The SMC manages critic
 Incorrect values may lead to hardware instability or damage. Use this tool at your own risk.
 
 ## License
-This project is licensed under the [MIT License](LICENSE) (or your preferred license).
+Licensed under the [GNU General Public License v3.0](LICENSE).
 
 ## Disclaimer
 This tool interacts with the system hardware via IOKit. Use at your own risk. The authors are not responsible for any hardware issues.
