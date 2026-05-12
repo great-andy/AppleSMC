@@ -73,13 +73,13 @@ void AppleSMC::PrintFans()
         printf("Total fans in system: %d\n", SInt32(totalFans));
     }
 
-    const UInt8 fanNumbers[] = "0123456789ABCDEFGHIJ";
+    const char fanNumbers[] = "0123456789ABCDEFGHIJ";
     totalFans = std::min(totalFans, sizeof(fanNumbers) - 1);
     for (size_t i = 0; i < totalFans; i++)
     {
         printf("\nFan #%d:\n", SInt32(i));
 
-        std::string key = std::format("F{}ID", fanNumbers[i]);
+        std::string key = std::format("F{:c}ID", fanNumbers[i]);
         SMCValue returnValue;
         mSmcManager.ReadKeyRaw(key, returnValue);
         if (returnValue.HasData())
@@ -89,23 +89,23 @@ void AppleSMC::PrintFans()
             printf("    Fan ID       : %s\n", str.c_str());
         }
 
-        key = std::format("F{}Ac", fanNumbers[i]);
+        key = std::format("F{:c}Ac", fanNumbers[i]);
         mSmcManager.ReadKeyRaw(key, returnValue);
         printf("    Current speed: %.0f\n", returnValue.GetFloatFromType());
 
-        key = std::format("F{}Mn", fanNumbers[i]);
+        key = std::format("F{:c}Mn", fanNumbers[i]);
         mSmcManager.ReadKeyRaw(key, returnValue);
         printf("    Minimum speed: %.0f\n", returnValue.GetFloatFromType());
 
-        key = std::format("F{}Mx", fanNumbers[i]);
+        key = std::format("F{:c}Mx", fanNumbers[i]);
         mSmcManager.ReadKeyRaw(key, returnValue);
         printf("    Maximum speed: %.0f\n", returnValue.GetFloatFromType());
 
-        key = std::format("F{}Sf", fanNumbers[i]);
+        key = std::format("F{:c}Sf", fanNumbers[i]);
         mSmcManager.ReadKeyRaw(key, returnValue);
         printf("    Safe speed   : %.0f\n", returnValue.GetFloatFromType());
 
-        key = std::format("F{}Tg", fanNumbers[i]);
+        key = std::format("F{:c}Tg", fanNumbers[i]);
         mSmcManager.ReadKeyRaw(key, returnValue);
         printf("    Target speed : %.0f\n", returnValue.GetFloatFromType());
 
@@ -117,7 +117,7 @@ void AppleSMC::PrintFans()
         }
         else
         {
-            key = std::format("F{}Md", fanNumbers[i]);
+            key = std::format("F{:c}Md", fanNumbers[i]);
             mSmcManager.ReadKeyRaw(key, returnValue);
             isForced = (returnValue.GetFloatFromType() != 0);
         }

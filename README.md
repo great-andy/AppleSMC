@@ -17,11 +17,18 @@ Built with **C++20**, this tool features an advanced interpretation engine for S
 - **Endianness Handling:** Intelligent MSB/LSB (Most/Least Significant Bit) conversion based on the key's internal attributes.
 
 ## Installation
+Build and install the tool to /usr/local/bin, use the terminal:
 ```bash
 git clone https://github.com/great-andy/AppleSMC.git
 cd AppleSMC
-make
-sudo make install
+make install
+```
+
+## Uninstallation
+To remove the tool from /usr/local/bin, use the terminal:
+```bash
+cd AppleSMC
+make uninstall
 ```
 
 ## Usage
@@ -53,7 +60,7 @@ smc -f
 
 **Read a specific key:**
 ```bash
-# Example: Read incoming power from AC adapter (in Milliwatts)
+# Example: Read incoming power from AC adapter (in milliwatts)
 smc -rACPW
 ```
 
